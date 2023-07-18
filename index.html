@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="card-game">
+        <div class="button-container">
+            <button class="btn" id="startButton" onclick="matchGrid.startGame()">Start</button>
+            <button class="btn" id="endButton" onclick="matchGrid.endGame()" disabled>End</button>
+            <button class="btn" id="replayButton" onclick="matchGrid.replayGame()" disabled>Replay</button>
+        </div>
+        <div class="time-remaining">Time Remaining: <span id="timer">0</span> seconds</div>
+        <div id="grid" class="card-grid"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
